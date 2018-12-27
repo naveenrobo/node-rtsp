@@ -7,4 +7,11 @@ Stream video from IP Camera using RTSP
 3. change username, password, IP and PORT in app.js
 4. run app.js file
 
+
+##Credits
+
+..* [databilim], who originally created this 
+..* and credits to others who created the libraries
+
 [ffmpeg]: https://www.ffmpeg.org/
+[databilim]https://github.com/databilim/rtsp-stream
