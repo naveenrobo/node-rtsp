@@ -3,7 +3,7 @@
 let device = new onvif.OnvifDevice({
   xaddr: 'http://118.189.65.66:8082/onvif/device_service',
   user: 'admin',
-  pass: 'admin0864'
+  pass: 'admin'
 });
 // Initialize the OnvifDevice object
 device.init().then((info) => {
@@ -18,7 +18,7 @@ device.init().then((info) => {
  Stream = require('node-rtsp-stream');
 stream = new Stream({
   name: 'test',
-  streamUrl: 'rtsp://admin:admin0864@118.189.65.66:8082/cam/realmonitor?channel=1&subtype=0',
+  streamUrl: 'rtsp://username:password@IP:PORT/cam/realmonitor?channel=1&subtype=0',
   wsPort: 9999,
   ffmpegOptions: { // options ffmpeg flags
     '-r': 30 // options with required values specify the value after the key
